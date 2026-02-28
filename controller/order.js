@@ -31,10 +31,10 @@ if (paymentData.status !== "success") {
     const userId = req.user.userId;
     const metadata = paymentData.metadata;
     
-    console.log("User id from meta", useerId)
-
-    const cartItems = await cart.find({ userId: userId }).populate("productId");
-
+    console.log("User id from meta", req.user.id)
+ 
+    const cartItems = await cart.find({ userId:req.user.id }).populate("productId");
+    console.log("cart:", cartItems )
     if (!cartItems.length) {
       return res.status(400).json({ message: "Cart empty after payment" });
     }
@@ -48,7 +48,7 @@ if (paymentData.status !== "success") {
     const delivery = JSON.parse(metadata.delivery || "{}");
 
     const order = await Order.create({
-      userId,
+      userId:req.user.id,
       email: paymentData.customer.email,
       items,
       delivery,
@@ -59,14 +59,13 @@ if (paymentData.status !== "success") {
     console.log("FULL PAYMENT DATA:", paymentData);
     console.log("METADATA:", paymentData.metadata);
     
-
-    await cart.deleteMany({ userId: userId });
-
     for (const item of order.items) {
   await product.findByIdAndUpdate(
     item.productId,
     { $inc: { totalSold: item.quantity } }
   );
+
+  await cart.deleteMany({ userId: userId });
 }
 
     res.json({ success: true, order });
