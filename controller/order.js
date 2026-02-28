@@ -65,7 +65,7 @@ if (paymentData.status !== "success") {
     { $inc: { totalSold: item.quantity } }
   );
 
-  await cart.deleteMany({ userId: userId });
+  await cart.deleteMany({ userId: req.user.id });
 }
 
     res.json({ success: true, order });
