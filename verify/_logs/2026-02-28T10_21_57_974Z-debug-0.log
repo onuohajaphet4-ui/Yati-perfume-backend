@@ -1,0 +1,329 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.9.3
+2 info using node@v22.19.0
+3 silly config load:file:C:\Program Files\nodejs\node_modules\npm\npmrc
+4 silly config load:file:C:\Users\HomePC\Desktop\perfume backend\.npmrc
+5 silly config load:file:C:\Users\HomePC\.npmrc
+6 silly config load:file:C:\Users\HomePC\AppData\Roaming\npm\etc\npmrc
+7 verbose title npm install cloudinary multer-storage-cloudinary
+8 verbose argv "install" "cloudinary" "multer-storage-cloudinary"
+9 verbose logfile logs-max:10 dir:C:\Users\HomePC\Desktop\perfume backend\verify\_logs\2026-02-28T10_21_57_974Z-
+10 verbose logfile C:\Users\HomePC\Desktop\perfume backend\verify\_logs\2026-02-28T10_21_57_974Z-debug-0.log
+11 silly logfile start cleaning logs, removing 1 files
+12 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+13 silly logfile done cleaning log files
+14 silly idealTree buildDeps
+15 silly fetch manifest cloudinary@*
+16 silly packumentCache full:https://registry.npmjs.org/cloudinary cache-miss
+17 http fetch GET 200 https://registry.npmjs.org/cloudinary 2305ms (cache miss)
+18 silly packumentCache full:https://registry.npmjs.org/cloudinary set size:undefined disposed:false
+19 silly fetch manifest multer-storage-cloudinary@*
+20 silly packumentCache full:https://registry.npmjs.org/multer-storage-cloudinary cache-miss
+21 http fetch GET 200 https://registry.npmjs.org/multer-storage-cloudinary 469ms (cache miss)
+22 silly packumentCache full:https://registry.npmjs.org/multer-storage-cloudinary set size:undefined disposed:false
+23 silly fetch manifest cloudinary@^1.21.0
+24 silly packumentCache full:https://registry.npmjs.org/cloudinary cache-miss
+25 http cache https://registry.npmjs.org/cloudinary 83ms (cache hit)
+26 silly packumentCache full:https://registry.npmjs.org/cloudinary set size:294524 disposed:false
+27 silly placeDep ROOT cloudinary@2.9.0 OK for: perfume-backend@1.0.0 want: *
+28 silly placeDep ROOT multer-storage-cloudinary@4.0.0 OK for: perfume-backend@1.0.0 want: *
+29 silly placeDep ROOT cloudinary@1.41.3 REPLACE for: multer-storage-cloudinary@4.0.0 want: ^1.21.0
+30 silly fetch manifest lodash@^4.17.21
+31 silly packumentCache full:https://registry.npmjs.org/lodash cache-miss
+32 silly fetch manifest q@^1.5.1
+33 silly packumentCache full:https://registry.npmjs.org/q cache-miss
+34 silly fetch manifest lodash@^4.17.21
+35 silly packumentCache full:https://registry.npmjs.org/lodash cache-miss
+36 http fetch GET 200 https://registry.npmjs.org/lodash 382ms (cache miss)
+37 silly packumentCache full:https://registry.npmjs.org/lodash set size:undefined disposed:false
+38 silly fetch manifest core-js@^3.30.1
+39 silly packumentCache full:https://registry.npmjs.org/core-js cache-miss
+40 http fetch GET 200 https://registry.npmjs.org/core-js 572ms (cache miss)
+41 silly packumentCache full:https://registry.npmjs.org/core-js set size:undefined disposed:false
+42 silly fetch manifest cloudinary-core@^2.13.0
+43 silly packumentCache full:https://registry.npmjs.org/cloudinary-core cache-miss
+44 http fetch GET 200 https://registry.npmjs.org/q 1787ms (cache miss)
+45 silly packumentCache full:https://registry.npmjs.org/q set size:undefined disposed:false
+46 http fetch GET 200 https://registry.npmjs.org/lodash 1969ms (cache miss)
+47 silly packumentCache full:https://registry.npmjs.org/lodash set size:undefined disposed:false
+48 http fetch GET 200 https://registry.npmjs.org/cloudinary-core 913ms (cache miss)
+49 silly packumentCache full:https://registry.npmjs.org/cloudinary-core set size:undefined disposed:false
+50 silly placeDep ROOT cloudinary-core@2.14.1 OK for: cloudinary@1.41.3 want: ^2.13.0
+51 silly placeDep ROOT lodash@4.17.23 OK for: cloudinary-core@2.14.1 want: >=4.0
+52 silly placeDep ROOT core-js@3.48.0 OK for: cloudinary@1.41.3 want: ^3.30.1
+53 silly placeDep ROOT q@1.5.1 OK for: cloudinary@1.41.3 want: ^1.5.1
+54 silly reify moves {}
+55 silly audit bulk request {
+55 silly audit   '@mongodb-js/saslprep': [ '1.4.5' ],
+55 silly audit   '@types/webidl-conversions': [ '7.0.3' ],
+55 silly audit   '@types/whatwg-url': [ '13.0.0' ],
+55 silly audit   accepts: [ '2.0.0' ],
+55 silly audit   anymatch: [ '3.1.3' ],
+55 silly audit   'append-field': [ '1.0.0' ],
+55 silly audit   asynckit: [ '0.4.0' ],
+55 silly audit   axios: [ '1.13.5' ],
+55 silly audit   'balanced-match': [ '1.0.2' ],
+55 silly audit   bcryptjs: [ '3.0.3' ],
+55 silly audit   'binary-extensions': [ '2.3.0' ],
+55 silly audit   'body-parser': [ '2.2.2' ],
+55 silly audit   'brace-expansion': [ '1.1.12' ],
+55 silly audit   braces: [ '3.0.3' ],
+55 silly audit   bson: [ '7.1.1' ],
+55 silly audit   'buffer-equal-constant-time': [ '1.0.1' ],
+55 silly audit   'buffer-from': [ '1.1.2' ],
+55 silly audit   busboy: [ '1.6.0' ],
+55 silly audit   bytes: [ '3.1.2' ],
+55 silly audit   'call-bind-apply-helpers': [ '1.0.2' ],
+55 silly audit   'call-bound': [ '1.0.4' ],
+55 silly audit   chokidar: [ '3.6.0' ],
+55 silly audit   'combined-stream': [ '1.0.8' ],
+55 silly audit   'concat-map': [ '0.0.1' ],
+55 silly audit   'concat-stream': [ '2.0.0' ],
+55 silly audit   'content-disposition': [ '1.0.1' ],
+55 silly audit   'content-type': [ '1.0.5' ],
+55 silly audit   cookie: [ '0.7.2' ],
+55 silly audit   'cookie-signature': [ '1.2.2' ],
+55 silly audit   cors: [ '2.8.6' ],
+55 silly audit   crypto: [ '1.0.1' ],
+55 silly audit   debug: [ '4.4.3' ],
+55 silly audit   'delayed-stream': [ '1.0.0' ],
+55 silly audit   depd: [ '2.0.0' ],
+55 silly audit   dotenv: [ '17.2.3' ],
+55 silly audit   'dunder-proto': [ '1.0.1' ],
+55 silly audit   'ecdsa-sig-formatter': [ '1.0.11' ],
+55 silly audit   'ee-first': [ '1.1.1' ],
+55 silly audit   encodeurl: [ '2.0.0' ],
+55 silly audit   'es-define-property': [ '1.0.1' ],
+55 silly audit   'es-errors': [ '1.3.0' ],
+55 silly audit   'es-object-atoms': [ '1.1.1' ],
+55 silly audit   'es-set-tostringtag': [ '2.1.0' ],
+55 silly audit   'escape-html': [ '1.0.3' ],
+55 silly audit   etag: [ '1.8.1' ],
+55 silly audit   express: [ '5.2.1' ],
+55 silly audit   'fill-range': [ '7.1.1' ],
+55 silly audit   finalhandler: [ '2.1.1' ],
+55 silly audit   'follow-redirects': [ '1.15.11' ],
+55 silly audit   'form-data': [ '4.0.5' ],
+55 silly audit   'mime-db': [ '1.52.0', '1.54.0' ],
+55 silly audit   'mime-types': [ '2.1.35', '3.0.2' ],
+55 silly audit   forwarded: [ '0.2.0' ],
+55 silly audit   fresh: [ '2.0.0' ],
+55 silly audit   fsevents: [ '2.3.3' ],
+55 silly audit   'function-bind': [ '1.1.2' ],
+55 silly audit   'get-intrinsic': [ '1.3.0' ],
+55 silly audit   'get-proto': [ '1.0.1' ],
+55 silly audit   'glob-parent': [ '5.1.2' ],
+55 silly audit   gopd: [ '1.2.0' ],
+55 silly audit   'has-flag': [ '3.0.0' ],
+55 silly audit   'has-symbols': [ '1.1.0' ],
+55 silly audit   'has-tostringtag': [ '1.0.2' ],
+55 silly audit   hasown: [ '2.0.2' ],
+55 silly audit   'http-errors': [ '2.0.1' ],
+55 silly audit   'iconv-lite': [ '0.7.2' ],
+55 silly audit   'ignore-by-default': [ '1.0.1' ],
+55 silly audit   inherits: [ '2.0.4' ],
+55 silly audit   'ipaddr.js': [ '1.9.1' ],
+55 silly audit   'is-binary-path': [ '2.1.0' ],
+55 silly audit   'is-extglob': [ '2.1.1' ],
+55 silly audit   'is-glob': [ '4.0.3' ],
+55 silly audit   'is-number': [ '7.0.0' ],
+55 silly audit   'is-promise': [ '4.0.0' ],
+55 silly audit   jsonwebtoken: [ '9.0.3' ],
+55 silly audit   jwa: [ '2.0.1' ],
+55 silly audit   jws: [ '4.0.1' ],
+55 silly audit   kareem: [ '3.0.0' ],
+55 silly audit   'lodash.includes': [ '4.3.0' ],
+55 silly audit   'lodash.isboolean': [ '3.0.3' ],
+55 silly audit   'lodash.isinteger': [ '4.0.4' ],
+55 silly audit   'lodash.isnumber': [ '3.0.3' ],
+55 silly audit   'lodash.isplainobject': [ '4.0.6' ],
+55 silly audit   'lodash.isstring': [ '4.0.1' ],
+55 silly audit   'lodash.once': [ '4.1.1' ],
+55 silly audit   'math-intrinsics': [ '1.1.0' ],
+55 silly audit   'media-typer': [ '1.1.0', '0.3.0' ],
+55 silly audit   'memory-pager': [ '1.5.0' ],
+55 silly audit   'merge-descriptors': [ '2.0.0' ],
+55 silly audit   minimatch: [ '3.1.2' ],
+55 silly audit   minimist: [ '1.2.8' ],
+55 silly audit   mkdirp: [ '0.5.6' ],
+55 silly audit   mogodb: [ '0.0.1-security' ],
+55 silly audit   mongodb: [ '7.0.0' ],
+55 silly audit   'mongodb-connection-string-url': [ '7.0.0' ],
+55 silly audit   mongoose: [ '9.1.5' ],
+55 silly audit   mpath: [ '0.9.0' ],
+55 silly audit   mquery: [ '6.0.0' ],
+55 silly audit   ms: [ '2.1.3' ],
+55 silly audit   multer: [ '2.0.2' ],
+55 silly audit   'type-is': [ '1.6.18', '2.0.1' ],
+55 silly audit   negotiator: [ '1.0.0' ],
+55 silly audit   nodemon: [ '3.1.11' ],
+55 silly audit   'normalize-path': [ '3.0.0' ],
+55 silly audit   'object-assign': [ '4.1.1' ],
+55 silly audit   'object-inspect': [ '1.13.4' ],
+55 silly audit   'on-finished': [ '2.4.1' ],
+55 silly audit   once: [ '1.4.0' ],
+55 silly audit   parseurl: [ '1.3.3' ],
+55 silly audit   'path-to-regexp': [ '8.3.0' ],
+55 silly audit   picomatch: [ '2.3.1' ],
+55 silly audit   'proxy-addr': [ '2.0.7' ],
+55 silly audit   'proxy-from-env': [ '1.1.0' ],
+55 silly audit   'pstree.remy': [ '1.1.8' ],
+55 silly audit   punycode: [ '2.3.1' ],
+55 silly audit   qs: [ '6.14.1' ],
+55 silly audit   'range-parser': [ '1.2.1' ],
+55 silly audit   'raw-body': [ '3.0.2' ],
+55 silly audit   'readable-stream': [ '3.6.2' ],
+55 silly audit   readdirp: [ '3.6.0' ],
+55 silly audit   router: [ '2.2.0' ],
+55 silly audit   'safe-buffer': [ '5.2.1' ],
+55 silly audit   'safer-buffer': [ '2.1.2' ],
+55 silly audit   semver: [ '7.7.3' ],
+55 silly audit   send: [ '1.2.1' ],
+55 silly audit   'serve-static': [ '2.2.1' ],
+55 silly audit   setprototypeof: [ '1.2.0' ],
+55 silly audit   'side-channel': [ '1.1.0' ],
+55 silly audit   'side-channel-list': [ '1.0.0' ],
+55 silly audit   'side-channel-map': [ '1.0.1' ],
+55 silly audit   'side-channel-weakmap': [ '1.0.2' ],
+55 silly audit   sift: [ '17.1.3' ],
+55 silly audit   'simple-update-notifier': [ '2.0.0' ],
+55 silly audit   'sparse-bitfield': [ '3.0.3' ],
+55 silly audit   statuses: [ '2.0.2' ],
+55 silly audit   streamsearch: [ '1.1.0' ],
+55 silly audit   string_decoder: [ '1.3.0' ],
+55 silly audit   'supports-color': [ '5.5.0' ],
+55 silly audit   'to-regex-range': [ '5.0.1' ],
+55 silly audit   toidentifier: [ '1.0.1' ],
+55 silly audit   touch: [ '3.1.1' ],
+55 silly audit   tr46: [ '5.1.1' ],
+55 silly audit   typedarray: [ '0.0.6' ],
+55 silly audit   undefsafe: [ '2.0.5' ],
+55 silly audit   unpipe: [ '1.0.0' ],
+55 silly audit   'util-deprecate': [ '1.0.2' ],
+55 silly audit   vary: [ '1.1.2' ],
+55 silly audit   'webidl-conversions': [ '7.0.0' ],
+55 silly audit   'whatwg-url': [ '14.2.0' ],
+55 silly audit   wrappy: [ '1.0.2' ],
+55 silly audit   xtend: [ '4.0.2' ],
+55 silly audit   'multer-storage-cloudinary': [ '4.0.0' ],
+55 silly audit   cloudinary: [ '1.41.3' ],
+55 silly audit   'cloudinary-core': [ '2.14.1' ],
+55 silly audit   lodash: [ '4.17.23' ],
+55 silly audit   'core-js': [ '3.48.0' ],
+55 silly audit   q: [ '1.5.1' ]
+55 silly audit }
+56 verbose reify failed optional dependency C:\Users\HomePC\Desktop\perfume backend\node_modules\fsevents
+57 silly reify mark deleted [
+57 silly reify   'C:\\Users\\HomePC\\Desktop\\perfume backend\\node_modules\\fsevents'
+57 silly reify ]
+58 http cache q@https://registry.npmjs.org/q/-/q-1.5.1.tgz 0ms (cache hit)
+59 http cache core-js@https://registry.npmjs.org/core-js/-/core-js-3.48.0.tgz 0ms (cache hit)
+60 http cache lodash@https://registry.npmjs.org/lodash/-/lodash-4.17.23.tgz 0ms (cache hit)
+61 http cache cloudinary-core@https://registry.npmjs.org/cloudinary-core/-/cloudinary-core-2.14.1.tgz 0ms (cache hit)
+62 http cache cloudinary@https://registry.npmjs.org/cloudinary/-/cloudinary-1.41.3.tgz 0ms (cache hit)
+63 silly tarball no local data for q@https://registry.npmjs.org/q/-/q-1.5.1.tgz. Extracting by manifest.
+64 http cache multer-storage-cloudinary@https://registry.npmjs.org/multer-storage-cloudinary/-/multer-storage-cloudinary-4.0.0.tgz 0ms (cache hit)
+65 silly tarball no local data for core-js@https://registry.npmjs.org/core-js/-/core-js-3.48.0.tgz. Extracting by manifest.
+66 silly tarball no local data for lodash@https://registry.npmjs.org/lodash/-/lodash-4.17.23.tgz. Extracting by manifest.
+67 silly tarball no local data for cloudinary-core@https://registry.npmjs.org/cloudinary-core/-/cloudinary-core-2.14.1.tgz. Extracting by manifest.
+68 silly tarball no local data for cloudinary@https://registry.npmjs.org/cloudinary/-/cloudinary-1.41.3.tgz. Extracting by manifest.
+69 silly tarball no local data for multer-storage-cloudinary@https://registry.npmjs.org/multer-storage-cloudinary/-/multer-storage-cloudinary-4.0.0.tgz. Extracting by manifest.
+70 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 571ms
+71 silly audit report {
+71 silly audit report   minimatch: [
+71 silly audit report     {
+71 silly audit report       id: 1113459,
+71 silly audit report       url: 'https://github.com/advisories/GHSA-3ppc-4f35-3m26',
+71 silly audit report       title: 'minimatch has a ReDoS via repeated wildcards with non-matching literal in pattern',
+71 silly audit report       severity: 'high',
+71 silly audit report       vulnerable_versions: '<3.1.3',
+71 silly audit report       cwe: [Array],
+71 silly audit report       cvss: [Object]
+71 silly audit report     },
+71 silly audit report     {
+71 silly audit report       id: 1113538,
+71 silly audit report       url: 'https://github.com/advisories/GHSA-7r86-cg39-jmmj',
+71 silly audit report       title: 'minimatch has ReDoS: matchOne() combinatorial backtracking via multiple non-adjacent GLOBSTAR segments',
+71 silly audit report       severity: 'high',
+71 silly audit report       vulnerable_versions: '<3.1.3',
+71 silly audit report       cwe: [Array],
+71 silly audit report       cvss: [Object]
+71 silly audit report     },
+71 silly audit report     {
+71 silly audit report       id: 1113546,
+71 silly audit report       url: 'https://github.com/advisories/GHSA-23c5-xmqv-rm74',
+71 silly audit report       title: 'minimatch ReDoS: nested *() extglobs generate catastrophically backtracking regular expressions',
+71 silly audit report       severity: 'high',
+71 silly audit report       vulnerable_versions: '<3.1.4',
+71 silly audit report       cwe: [Array],
+71 silly audit report       cvss: [Object]
+71 silly audit report     }
+71 silly audit report   ],
+71 silly audit report   qs: [
+71 silly audit report     {
+71 silly audit report       id: 1113161,
+71 silly audit report       url: 'https://github.com/advisories/GHSA-w7fw-mjwx-w883',
+71 silly audit report       title: "qs's arrayLimit bypass in comma parsing allows denial of service",
+71 silly audit report       severity: 'low',
+71 silly audit report       vulnerable_versions: '>=6.7.0 <=6.14.1',
+71 silly audit report       cwe: [Array],
+71 silly audit report       cvss: [Object]
+71 silly audit report     }
+71 silly audit report   ],
+71 silly audit report   cloudinary: [
+71 silly audit report     {
+71 silly audit report       id: 1109723,
+71 silly audit report       url: 'https://github.com/advisories/GHSA-g4mf-96x5-5m2c',
+71 silly audit report       title: 'Cloudinary Node SDK is vulnerable to Arbitrary Argument Injection through parameters that include an ampersand',
+71 silly audit report       severity: 'high',
+71 silly audit report       vulnerable_versions: '<2.7.0',
+71 silly audit report       cwe: [Array],
+71 silly audit report       cvss: [Object]
+71 silly audit report     }
+71 silly audit report   ]
+71 silly audit report }
+72 silly packumentCache corgi:https://registry.npmjs.org/minimatch cache-miss
+73 silly packumentCache corgi:https://registry.npmjs.org/qs cache-miss
+74 silly packumentCache corgi:https://registry.npmjs.org/cloudinary cache-miss
+75 http fetch GET 200 https://registry.npmjs.org/q/-/q-1.5.1.tgz 1123ms (cache miss)
+76 warn deprecated q@1.5.1: You or someone you depend on is using Q, the JavaScript Promise library that gave JavaScript developers strong feelings about promises. They can almost certainly migrate to the native JavaScript promise now. Thank you literally everyone for joining me in this bet against the odds. Be excellent to each other.
+76 warn deprecated
+76 warn deprecated (For a CapTP with native promises, see @endo/eventual-send and @endo/captp)
+77 http fetch GET 200 https://registry.npmjs.org/cloudinary 3059ms (cache miss)
+78 silly packumentCache corgi:https://registry.npmjs.org/cloudinary set size:undefined disposed:false
+79 http fetch GET 200 https://registry.npmjs.org/qs 3140ms (cache miss)
+80 silly packumentCache corgi:https://registry.npmjs.org/qs set size:undefined disposed:false
+81 http fetch GET 200 https://registry.npmjs.org/minimatch 3241ms (cache miss)
+82 silly packumentCache corgi:https://registry.npmjs.org/minimatch set size:undefined disposed:false
+83 silly packumentCache corgi:https://registry.npmjs.org/nodemon cache-miss
+84 http fetch GET 200 https://registry.npmjs.org/multer-storage-cloudinary/-/multer-storage-cloudinary-4.0.0.tgz 4520ms (cache miss)
+85 http fetch GET 200 https://registry.npmjs.org/nodemon 1256ms (cache miss)
+86 silly packumentCache corgi:https://registry.npmjs.org/nodemon set size:undefined disposed:false
+87 silly packumentCache corgi:https://registry.npmjs.org/body-parser cache-miss
+88 silly packumentCache corgi:https://registry.npmjs.org/express cache-miss
+89 http fetch GET 200 https://registry.npmjs.org/body-parser 2248ms (cache miss)
+90 silly packumentCache corgi:https://registry.npmjs.org/body-parser set size:undefined disposed:false
+91 http fetch GET 200 https://registry.npmjs.org/express 2606ms (cache miss)
+92 silly packumentCache corgi:https://registry.npmjs.org/express set size:undefined disposed:false
+93 silly packumentCache corgi:https://registry.npmjs.org/multer-storage-cloudinary cache-miss
+94 http fetch GET 200 https://registry.npmjs.org/multer-storage-cloudinary 567ms (cache miss)
+95 silly packumentCache corgi:https://registry.npmjs.org/multer-storage-cloudinary set size:undefined disposed:false
+96 http fetch GET 200 https://registry.npmjs.org/cloudinary/-/cloudinary-1.41.3.tgz 12291ms (cache miss)
+97 http fetch GET 200 https://registry.npmjs.org/cloudinary-core/-/cloudinary-core-2.14.1.tgz 13313ms (cache miss)
+98 http fetch GET 200 https://registry.npmjs.org/lodash/-/lodash-4.17.23.tgz 55474ms (cache miss)
+99 http fetch GET 200 https://registry.npmjs.org/core-js/-/core-js-3.48.0.tgz 714672ms (cache miss)
+100 info run core-js@3.48.0 postinstall node_modules/core-js node -e "try{require('./postinstall')}catch(e){}"
+101 info run core-js@3.48.0 postinstall { code: 0, signal: null }
+102 silly ADD node_modules/q
+103 silly ADD node_modules/core-js
+104 silly ADD node_modules/lodash
+105 silly ADD node_modules/cloudinary-core
+106 silly ADD node_modules/cloudinary
+107 silly ADD node_modules/multer-storage-cloudinary
+108 silly ADD
+109 verbose cwd C:\Users\HomePC\Desktop\perfume backend
+110 verbose os Windows_NT 10.0.19045
+111 verbose node v22.19.0
+112 verbose npm  v10.9.3
+113 verbose exit 0
+114 info ok

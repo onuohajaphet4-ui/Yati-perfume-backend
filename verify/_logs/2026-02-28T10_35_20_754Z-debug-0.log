@@ -1,0 +1,301 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.9.3
+2 info using node@v22.19.0
+3 silly config load:file:C:\Program Files\nodejs\node_modules\npm\npmrc
+4 silly config load:file:C:\Users\HomePC\Desktop\perfume backend\.npmrc
+5 silly config load:file:C:\Users\HomePC\.npmrc
+6 silly config load:file:C:\Users\HomePC\AppData\Roaming\npm\etc\npmrc
+7 verbose title npm i passport
+8 verbose argv "i" "passport"
+9 verbose logfile logs-max:10 dir:C:\Users\HomePC\Desktop\perfume backend\verify\_logs\2026-02-28T10_35_20_754Z-
+10 verbose logfile C:\Users\HomePC\Desktop\perfume backend\verify\_logs\2026-02-28T10_35_20_754Z-debug-0.log
+11 silly logfile start cleaning logs, removing 1 files
+12 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+13 silly logfile done cleaning log files
+14 silly idealTree buildDeps
+15 silly fetch manifest passport@*
+16 silly packumentCache full:https://registry.npmjs.org/passport cache-miss
+17 http fetch GET 200 https://registry.npmjs.org/passport 2810ms (cache miss)
+18 silly packumentCache full:https://registry.npmjs.org/passport set size:undefined disposed:false
+19 silly placeDep ROOT passport@0.7.0 OK for: perfume-backend@1.0.0 want: *
+20 silly fetch manifest pause@0.0.1
+21 silly packumentCache full:https://registry.npmjs.org/pause cache-miss
+22 silly fetch manifest utils-merge@^1.0.1
+23 silly packumentCache full:https://registry.npmjs.org/utils-merge cache-miss
+24 silly fetch manifest passport-strategy@1.x.x
+25 silly packumentCache full:https://registry.npmjs.org/passport-strategy cache-miss
+26 http fetch GET 200 https://registry.npmjs.org/utils-merge 299ms (cache miss)
+27 silly packumentCache full:https://registry.npmjs.org/utils-merge set size:undefined disposed:false
+28 http fetch GET 200 https://registry.npmjs.org/passport-strategy 1280ms (cache miss)
+29 silly packumentCache full:https://registry.npmjs.org/passport-strategy set size:undefined disposed:false
+30 http fetch GET 200 https://registry.npmjs.org/pause 1290ms (cache miss)
+31 silly packumentCache full:https://registry.npmjs.org/pause set size:undefined disposed:false
+32 silly placeDep ROOT passport-strategy@1.0.0 OK for: passport@0.7.0 want: 1.x.x
+33 silly placeDep ROOT pause@0.0.1 OK for: passport@0.7.0 want: 0.0.1
+34 silly placeDep ROOT utils-merge@1.0.1 OK for: passport@0.7.0 want: ^1.0.1
+35 silly reify moves {}
+36 silly audit bulk request {
+36 silly audit   '@mongodb-js/saslprep': [ '1.4.5' ],
+36 silly audit   '@types/webidl-conversions': [ '7.0.3' ],
+36 silly audit   '@types/whatwg-url': [ '13.0.0' ],
+36 silly audit   accepts: [ '2.0.0' ],
+36 silly audit   anymatch: [ '3.1.3' ],
+36 silly audit   'append-field': [ '1.0.0' ],
+36 silly audit   asynckit: [ '0.4.0' ],
+36 silly audit   axios: [ '1.13.5' ],
+36 silly audit   'balanced-match': [ '1.0.2' ],
+36 silly audit   bcryptjs: [ '3.0.3' ],
+36 silly audit   'binary-extensions': [ '2.3.0' ],
+36 silly audit   'body-parser': [ '2.2.2' ],
+36 silly audit   'brace-expansion': [ '1.1.12' ],
+36 silly audit   braces: [ '3.0.3' ],
+36 silly audit   bson: [ '7.1.1' ],
+36 silly audit   'buffer-equal-constant-time': [ '1.0.1' ],
+36 silly audit   'buffer-from': [ '1.1.2' ],
+36 silly audit   busboy: [ '1.6.0' ],
+36 silly audit   bytes: [ '3.1.2' ],
+36 silly audit   'call-bind-apply-helpers': [ '1.0.2' ],
+36 silly audit   'call-bound': [ '1.0.4' ],
+36 silly audit   chokidar: [ '3.6.0' ],
+36 silly audit   cloudinary: [ '1.41.3' ],
+36 silly audit   'cloudinary-core': [ '2.14.1' ],
+36 silly audit   'combined-stream': [ '1.0.8' ],
+36 silly audit   'concat-map': [ '0.0.1' ],
+36 silly audit   'concat-stream': [ '2.0.0' ],
+36 silly audit   'content-disposition': [ '1.0.1' ],
+36 silly audit   'content-type': [ '1.0.5' ],
+36 silly audit   cookie: [ '0.7.2' ],
+36 silly audit   'cookie-signature': [ '1.2.2' ],
+36 silly audit   'core-js': [ '3.48.0' ],
+36 silly audit   cors: [ '2.8.6' ],
+36 silly audit   crypto: [ '1.0.1' ],
+36 silly audit   debug: [ '4.4.3' ],
+36 silly audit   'delayed-stream': [ '1.0.0' ],
+36 silly audit   depd: [ '2.0.0' ],
+36 silly audit   dotenv: [ '17.2.3' ],
+36 silly audit   'dunder-proto': [ '1.0.1' ],
+36 silly audit   'ecdsa-sig-formatter': [ '1.0.11' ],
+36 silly audit   'ee-first': [ '1.1.1' ],
+36 silly audit   encodeurl: [ '2.0.0' ],
+36 silly audit   'es-define-property': [ '1.0.1' ],
+36 silly audit   'es-errors': [ '1.3.0' ],
+36 silly audit   'es-object-atoms': [ '1.1.1' ],
+36 silly audit   'es-set-tostringtag': [ '2.1.0' ],
+36 silly audit   'escape-html': [ '1.0.3' ],
+36 silly audit   etag: [ '1.8.1' ],
+36 silly audit   express: [ '5.2.1' ],
+36 silly audit   'fill-range': [ '7.1.1' ],
+36 silly audit   finalhandler: [ '2.1.1' ],
+36 silly audit   'follow-redirects': [ '1.15.11' ],
+36 silly audit   'form-data': [ '4.0.5' ],
+36 silly audit   'mime-db': [ '1.52.0', '1.54.0' ],
+36 silly audit   'mime-types': [ '2.1.35', '3.0.2' ],
+36 silly audit   forwarded: [ '0.2.0' ],
+36 silly audit   fresh: [ '2.0.0' ],
+36 silly audit   fsevents: [ '2.3.3' ],
+36 silly audit   'function-bind': [ '1.1.2' ],
+36 silly audit   'get-intrinsic': [ '1.3.0' ],
+36 silly audit   'get-proto': [ '1.0.1' ],
+36 silly audit   'glob-parent': [ '5.1.2' ],
+36 silly audit   gopd: [ '1.2.0' ],
+36 silly audit   'has-flag': [ '3.0.0' ],
+36 silly audit   'has-symbols': [ '1.1.0' ],
+36 silly audit   'has-tostringtag': [ '1.0.2' ],
+36 silly audit   hasown: [ '2.0.2' ],
+36 silly audit   'http-errors': [ '2.0.1' ],
+36 silly audit   'iconv-lite': [ '0.7.2' ],
+36 silly audit   'ignore-by-default': [ '1.0.1' ],
+36 silly audit   inherits: [ '2.0.4' ],
+36 silly audit   'ipaddr.js': [ '1.9.1' ],
+36 silly audit   'is-binary-path': [ '2.1.0' ],
+36 silly audit   'is-extglob': [ '2.1.1' ],
+36 silly audit   'is-glob': [ '4.0.3' ],
+36 silly audit   'is-number': [ '7.0.0' ],
+36 silly audit   'is-promise': [ '4.0.0' ],
+36 silly audit   jsonwebtoken: [ '9.0.3' ],
+36 silly audit   jwa: [ '2.0.1' ],
+36 silly audit   jws: [ '4.0.1' ],
+36 silly audit   kareem: [ '3.0.0' ],
+36 silly audit   lodash: [ '4.17.23' ],
+36 silly audit   'lodash.includes': [ '4.3.0' ],
+36 silly audit   'lodash.isboolean': [ '3.0.3' ],
+36 silly audit   'lodash.isinteger': [ '4.0.4' ],
+36 silly audit   'lodash.isnumber': [ '3.0.3' ],
+36 silly audit   'lodash.isplainobject': [ '4.0.6' ],
+36 silly audit   'lodash.isstring': [ '4.0.1' ],
+36 silly audit   'lodash.once': [ '4.1.1' ],
+36 silly audit   'math-intrinsics': [ '1.1.0' ],
+36 silly audit   'media-typer': [ '1.1.0', '0.3.0' ],
+36 silly audit   'memory-pager': [ '1.5.0' ],
+36 silly audit   'merge-descriptors': [ '2.0.0' ],
+36 silly audit   minimatch: [ '3.1.2' ],
+36 silly audit   minimist: [ '1.2.8' ],
+36 silly audit   mkdirp: [ '0.5.6' ],
+36 silly audit   mogodb: [ '0.0.1-security' ],
+36 silly audit   mongodb: [ '7.0.0' ],
+36 silly audit   'mongodb-connection-string-url': [ '7.0.0' ],
+36 silly audit   mongoose: [ '9.1.5' ],
+36 silly audit   mpath: [ '0.9.0' ],
+36 silly audit   mquery: [ '6.0.0' ],
+36 silly audit   ms: [ '2.1.3' ],
+36 silly audit   multer: [ '2.0.2' ],
+36 silly audit   'multer-storage-cloudinary': [ '4.0.0' ],
+36 silly audit   'type-is': [ '1.6.18', '2.0.1' ],
+36 silly audit   negotiator: [ '1.0.0' ],
+36 silly audit   nodemon: [ '3.1.11' ],
+36 silly audit   'normalize-path': [ '3.0.0' ],
+36 silly audit   'object-assign': [ '4.1.1' ],
+36 silly audit   'object-inspect': [ '1.13.4' ],
+36 silly audit   'on-finished': [ '2.4.1' ],
+36 silly audit   once: [ '1.4.0' ],
+36 silly audit   parseurl: [ '1.3.3' ],
+36 silly audit   'path-to-regexp': [ '8.3.0' ],
+36 silly audit   picomatch: [ '2.3.1' ],
+36 silly audit   'proxy-addr': [ '2.0.7' ],
+36 silly audit   'proxy-from-env': [ '1.1.0' ],
+36 silly audit   'pstree.remy': [ '1.1.8' ],
+36 silly audit   punycode: [ '2.3.1' ],
+36 silly audit   q: [ '1.5.1' ],
+36 silly audit   qs: [ '6.14.1' ],
+36 silly audit   'range-parser': [ '1.2.1' ],
+36 silly audit   'raw-body': [ '3.0.2' ],
+36 silly audit   'readable-stream': [ '3.6.2' ],
+36 silly audit   readdirp: [ '3.6.0' ],
+36 silly audit   router: [ '2.2.0' ],
+36 silly audit   'safe-buffer': [ '5.2.1' ],
+36 silly audit   'safer-buffer': [ '2.1.2' ],
+36 silly audit   semver: [ '7.7.3' ],
+36 silly audit   send: [ '1.2.1' ],
+36 silly audit   'serve-static': [ '2.2.1' ],
+36 silly audit   setprototypeof: [ '1.2.0' ],
+36 silly audit   'side-channel': [ '1.1.0' ],
+36 silly audit   'side-channel-list': [ '1.0.0' ],
+36 silly audit   'side-channel-map': [ '1.0.1' ],
+36 silly audit   'side-channel-weakmap': [ '1.0.2' ],
+36 silly audit   sift: [ '17.1.3' ],
+36 silly audit   'simple-update-notifier': [ '2.0.0' ],
+36 silly audit   'sparse-bitfield': [ '3.0.3' ],
+36 silly audit   statuses: [ '2.0.2' ],
+36 silly audit   streamsearch: [ '1.1.0' ],
+36 silly audit   string_decoder: [ '1.3.0' ],
+36 silly audit   'supports-color': [ '5.5.0' ],
+36 silly audit   'to-regex-range': [ '5.0.1' ],
+36 silly audit   toidentifier: [ '1.0.1' ],
+36 silly audit   touch: [ '3.1.1' ],
+36 silly audit   tr46: [ '5.1.1' ],
+36 silly audit   typedarray: [ '0.0.6' ],
+36 silly audit   undefsafe: [ '2.0.5' ],
+36 silly audit   unpipe: [ '1.0.0' ],
+36 silly audit   'util-deprecate': [ '1.0.2' ],
+36 silly audit   vary: [ '1.1.2' ],
+36 silly audit   'webidl-conversions': [ '7.0.0' ],
+36 silly audit   'whatwg-url': [ '14.2.0' ],
+36 silly audit   wrappy: [ '1.0.2' ],
+36 silly audit   xtend: [ '4.0.2' ],
+36 silly audit   passport: [ '0.7.0' ],
+36 silly audit   'passport-strategy': [ '1.0.0' ],
+36 silly audit   pause: [ '0.0.1' ],
+36 silly audit   'utils-merge': [ '1.0.1' ]
+36 silly audit }
+37 verbose reify failed optional dependency C:\Users\HomePC\Desktop\perfume backend\node_modules\fsevents
+38 silly reify mark deleted [
+38 silly reify   'C:\\Users\\HomePC\\Desktop\\perfume backend\\node_modules\\fsevents'
+38 silly reify ]
+39 http cache utils-merge@https://registry.npmjs.org/utils-merge/-/utils-merge-1.0.1.tgz 3ms (cache hit)
+40 http cache pause@https://registry.npmjs.org/pause/-/pause-0.0.1.tgz 0ms (cache hit)
+41 http cache passport-strategy@https://registry.npmjs.org/passport-strategy/-/passport-strategy-1.0.0.tgz 0ms (cache hit)
+42 http cache passport@https://registry.npmjs.org/passport/-/passport-0.7.0.tgz 0ms (cache hit)
+43 silly tarball no local data for utils-merge@https://registry.npmjs.org/utils-merge/-/utils-merge-1.0.1.tgz. Extracting by manifest.
+44 silly tarball no local data for pause@https://registry.npmjs.org/pause/-/pause-0.0.1.tgz. Extracting by manifest.
+45 silly tarball no local data for passport-strategy@https://registry.npmjs.org/passport-strategy/-/passport-strategy-1.0.0.tgz. Extracting by manifest.
+46 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 603ms
+47 silly audit report {
+47 silly audit report   cloudinary: [
+47 silly audit report     {
+47 silly audit report       id: 1109723,
+47 silly audit report       url: 'https://github.com/advisories/GHSA-g4mf-96x5-5m2c',
+47 silly audit report       title: 'Cloudinary Node SDK is vulnerable to Arbitrary Argument Injection through parameters that include an ampersand',
+47 silly audit report       severity: 'high',
+47 silly audit report       vulnerable_versions: '<2.7.0',
+47 silly audit report       cwe: [Array],
+47 silly audit report       cvss: [Object]
+47 silly audit report     }
+47 silly audit report   ],
+47 silly audit report   minimatch: [
+47 silly audit report     {
+47 silly audit report       id: 1113459,
+47 silly audit report       url: 'https://github.com/advisories/GHSA-3ppc-4f35-3m26',
+47 silly audit report       title: 'minimatch has a ReDoS via repeated wildcards with non-matching literal in pattern',
+47 silly audit report       severity: 'high',
+47 silly audit report       vulnerable_versions: '<3.1.3',
+47 silly audit report       cwe: [Array],
+47 silly audit report       cvss: [Object]
+47 silly audit report     },
+47 silly audit report     {
+47 silly audit report       id: 1113538,
+47 silly audit report       url: 'https://github.com/advisories/GHSA-7r86-cg39-jmmj',
+47 silly audit report       title: 'minimatch has ReDoS: matchOne() combinatorial backtracking via multiple non-adjacent GLOBSTAR segments',
+47 silly audit report       severity: 'high',
+47 silly audit report       vulnerable_versions: '<3.1.3',
+47 silly audit report       cwe: [Array],
+47 silly audit report       cvss: [Object]
+47 silly audit report     },
+47 silly audit report     {
+47 silly audit report       id: 1113546,
+47 silly audit report       url: 'https://github.com/advisories/GHSA-23c5-xmqv-rm74',
+47 silly audit report       title: 'minimatch ReDoS: nested *() extglobs generate catastrophically backtracking regular expressions',
+47 silly audit report       severity: 'high',
+47 silly audit report       vulnerable_versions: '<3.1.4',
+47 silly audit report       cwe: [Array],
+47 silly audit report       cvss: [Object]
+47 silly audit report     }
+47 silly audit report   ],
+47 silly audit report   qs: [
+47 silly audit report     {
+47 silly audit report       id: 1113161,
+47 silly audit report       url: 'https://github.com/advisories/GHSA-w7fw-mjwx-w883',
+47 silly audit report       title: "qs's arrayLimit bypass in comma parsing allows denial of service",
+47 silly audit report       severity: 'low',
+47 silly audit report       vulnerable_versions: '>=6.7.0 <=6.14.1',
+47 silly audit report       cwe: [Array],
+47 silly audit report       cvss: [Object]
+47 silly audit report     }
+47 silly audit report   ]
+47 silly audit report }
+48 silly packumentCache corgi:https://registry.npmjs.org/cloudinary cache-miss
+49 silly packumentCache corgi:https://registry.npmjs.org/minimatch cache-miss
+50 silly packumentCache corgi:https://registry.npmjs.org/qs cache-miss
+51 silly tarball no local data for passport@https://registry.npmjs.org/passport/-/passport-0.7.0.tgz. Extracting by manifest.
+52 http fetch GET 200 https://registry.npmjs.org/cloudinary 2206ms (cache stale)
+53 silly packumentCache corgi:https://registry.npmjs.org/cloudinary set size:156999 disposed:false
+54 http fetch GET 200 https://registry.npmjs.org/minimatch 2243ms (cache stale)
+55 silly packumentCache corgi:https://registry.npmjs.org/minimatch set size:167610 disposed:false
+56 http fetch GET 200 https://registry.npmjs.org/qs 2251ms (cache stale)
+57 silly packumentCache corgi:https://registry.npmjs.org/qs set size:143799 disposed:false
+58 silly packumentCache corgi:https://registry.npmjs.org/multer-storage-cloudinary cache-miss
+59 http fetch GET 200 https://registry.npmjs.org/utils-merge/-/utils-merge-1.0.1.tgz 3159ms (cache miss)
+60 http fetch GET 200 https://registry.npmjs.org/pause/-/pause-0.0.1.tgz 3425ms (cache miss)
+61 http fetch GET 200 https://registry.npmjs.org/passport-strategy/-/passport-strategy-1.0.0.tgz 3440ms (cache miss)
+62 http fetch GET 200 https://registry.npmjs.org/multer-storage-cloudinary 1311ms (cache stale)
+63 silly packumentCache corgi:https://registry.npmjs.org/multer-storage-cloudinary set size:7760 disposed:false
+64 silly packumentCache corgi:https://registry.npmjs.org/nodemon cache-miss
+65 http fetch GET 200 https://registry.npmjs.org/nodemon 337ms (cache stale)
+66 silly packumentCache corgi:https://registry.npmjs.org/nodemon set size:282567 disposed:false
+67 silly packumentCache corgi:https://registry.npmjs.org/body-parser cache-miss
+68 silly packumentCache corgi:https://registry.npmjs.org/express cache-miss
+69 http fetch GET 200 https://registry.npmjs.org/body-parser 85ms (cache stale)
+70 silly packumentCache corgi:https://registry.npmjs.org/body-parser set size:77795 disposed:false
+71 http fetch GET 200 https://registry.npmjs.org/express 216ms (cache stale)
+72 silly packumentCache corgi:https://registry.npmjs.org/express set size:337735 disposed:false
+73 http fetch GET 200 https://registry.npmjs.org/passport/-/passport-0.7.0.tgz 8217ms (cache miss)
+74 silly ADD node_modules/utils-merge
+75 silly ADD node_modules/pause
+76 silly ADD node_modules/passport-strategy
+77 silly ADD node_modules/passport
+78 silly ADD
+79 verbose cwd C:\Users\HomePC\Desktop\perfume backend
+80 verbose os Windows_NT 10.0.19045
+81 verbose node v22.19.0
+82 verbose npm  v10.9.3
+83 verbose exit 0
+84 info ok
