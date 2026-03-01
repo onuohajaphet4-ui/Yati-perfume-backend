@@ -3,7 +3,7 @@ import axios from "axios";
 export const initializePayment = async (req, res) => {
   try {
     const { email, cartItems, delivery } = req.body;
-
+    const userId = req.user.id
     let total = 0;
     cartItems.forEach(item => {
       total += item.productId.price * item.quantity;
@@ -20,10 +20,10 @@ export const initializePayment = async (req, res) => {
       {
         email: email,
         amount: amountInKobo,
-        callback_url: "https://yati-eight.vercel.app/payment-success",
+        callback_url: "http://localhost:5173/payment-success",
 
         metadata: {
-        userId: req.user.id,
+        userId,
         email,
         cartItems:JSON.stringify(cartItems),
         delivery: JSON.stringify(delivery)
@@ -55,6 +55,7 @@ export const initializePayment = async (req, res) => {
 export const verifyPayment = async (req, res) => {
   try {
     const { reference } = req.params;
+     const userId = req.user.id
 
     console.log("VERIFYING:", reference);
 
@@ -75,7 +76,7 @@ export const verifyPayment = async (req, res) => {
     if (data.status === "success") {
       return res.json({
         success: true,
-        userId: req.user.id,
+        userId,
         email: data.customer.email,
         cartItems: JSON.parse(data.metadata.cartItems),
         delivery: JSON.parse(data.metadata.delivery)

@@ -10,28 +10,29 @@ const getDateRange = (period) => {
     case "today":
       startDate = new Date();
       startDate.setHours(0, 0, 0, 0);
-      break;
+      return { createdAt: { $gte: startDate } };
 
     case "week":
       startDate = new Date();
       startDate.setDate(now.getDate() - 7);
-      break;
+       return { createdAt: { $gte: startDate } };
 
     case "month":
       startDate = new Date();
       startDate.setMonth(now.getMonth() - 1);
-      break;
+       return { createdAt: { $gte: startDate } };
 
     case "year":
       startDate = new Date();
       startDate.setFullYear(now.getFullYear() - 1);
-      break;
+       return { createdAt: { $gte: startDate } };
 
+    case "all":
     default:
       return {}; 
   }
 
-  return { createdAt: { $gte: startDate } };
+ 
 };
 
 export const getDashboardStats = async (req, res) => {
@@ -81,9 +82,10 @@ export const getCustomerDashboard = async (req, res) => {
   try {
     const period = req.query.period || "all";
     const dateFilter = getDateRange(period);
-
+    const userId = req.user.id
+    
     const orders = await Order.find({
-      userId: req.user._id,
+      userId,
       ...dateFilter
     });
 
@@ -109,7 +111,7 @@ export const getCustomerDashboard = async (req, res) => {
       recentOrders: orders.slice(-5).reverse()
     });
 
-    console.log("Logged user:", req.user._id);
+    console.log("Logged user:", req.user.id);
     console.log("Orders found:", orders.length)
     console.log("product found:", totalProducts)
 

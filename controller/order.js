@@ -6,6 +6,7 @@ import {product} from '../model/product.js'
 export const createOrder = async (req, res) => {
   try {
    const { reference } = req.body;
+   const userId = req.user.id
 
 if (!reference) {
   return res.status(400).json({ message: "Reference required" });
@@ -26,9 +27,6 @@ if (paymentData.status !== "success") {
   return res.status(400).json({ message: "Payment not verified" });
 }
 
-
-    
-    const userId = req.user.userId;
     const metadata = paymentData.metadata;
     
     console.log("User id from meta", req.user.id)
@@ -48,7 +46,7 @@ if (paymentData.status !== "success") {
     const delivery = JSON.parse(metadata.delivery || "{}");
 
     const order = await Order.create({
-      userId:req.user.id,
+      userId,
       email: paymentData.customer.email,
       items,
       delivery,

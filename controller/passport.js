@@ -25,7 +25,7 @@ passport.use(
                         name:profile.displayName,
                         email:profile.emails[0].value,
                         provider: "google",
-                        role:"user"
+                        role:"users"
                      })
                 }
 
@@ -33,10 +33,7 @@ passport.use(
 
                 return done (null, users)
             } catch (error) {
-                res.status(500).json ({
-            success:false,
-            message:'Server Error', error
-             })
+                return done(error, null)
             }
         }
 

@@ -15,6 +15,9 @@ import orderRoutes from './route/order.js'
 import dashRoutes from './route/dashboard.js'
 import paystackRoute from "./route/web.js";
 import favoriteRoutes from "./route/favorite.js"
+import goggleRoutes from "./route/passport.js"
+import passport from 'passport'
+import './controller/passport.js'
 
 const app = express();
 app.use(express.json())
@@ -23,6 +26,8 @@ app.use(cors({
   methods:'GET,POST,PUT,DELETE',
   allowedHeaders:'Content-Type,Authorization'
 }))
+app.use(passport.initialize())
+
 
 
 
@@ -46,6 +51,7 @@ app.use('/api/payment', paymentRoutes)
 app.use('/api/order', orderRoutes)
 app.use('/api/dash', dashRoutes)
 app.use('/api/favorite', favoriteRoutes)
+app.use('/', goggleRoutes)
 app.use("/api/paystack", express.json(), paystackRoute);
 
 app.get("/test", (req, res) => {

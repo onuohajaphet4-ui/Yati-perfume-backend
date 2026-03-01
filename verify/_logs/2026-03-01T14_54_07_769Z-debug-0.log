@@ -7,7 +7,8 @@
 6 silly config load:file:C:\Users\HomePC\AppData\Roaming\npm\etc\npmrc
 7 verbose title npm run dev
 8 verbose argv "run" "dev"
-9 verbose logfile logs-max:10 dir:C:\Users\HomePC\Desktop\perfume backend\verify\_logs\2026-02-28T10_10_15_523Z-
-10 verbose logfile C:\Users\HomePC\Desktop\perfume backend\verify\_logs\2026-02-28T10_10_15_523Z-debug-0.log
+9 verbose logfile logs-max:10 dir:C:\Users\HomePC\Desktop\perfume backend\verify\_logs\2026-03-01T14_54_07_769Z-
+10 verbose logfile C:\Users\HomePC\Desktop\perfume backend\verify\_logs\2026-03-01T14_54_07_769Z-debug-0.log
 11 silly logfile start cleaning logs, removing 1 files
 12 silly logfile done cleaning log files
+13 http fetch GET 200 https://registry.npmjs.org/npm 3077ms
