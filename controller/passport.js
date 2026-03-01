@@ -9,7 +9,7 @@ passport.use(
         {
             clientID:process.env.CLIENT_ID, 
             clientSecret:process.env.CLIENT_SECRET,
-            callbackURL:"http://localhost:3000/auth/google/callback"
+            callbackURL:"https://yati-perfume-backend.onrender.com/auth/google/callback"
             
         },
 
