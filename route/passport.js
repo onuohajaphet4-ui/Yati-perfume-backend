@@ -14,7 +14,7 @@ router.get ("/auth/google/callback" , passport.authenticate("google", {session:f
     )
 
 
-    res.redirect (`http://localhost:5173/oauth-success?token=${token}`)
+    res.redirect (`https://yati-eight.vercel.app/oauth-success?token=${token}`)
  })
 
  export default router

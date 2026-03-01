@@ -20,7 +20,7 @@ export const initializePayment = async (req, res) => {
       {
         email: email,
         amount: amountInKobo,
-        callback_url: "http://yati-eight.vercel.app/payment-success",
+        callback_url: "https://yati-eight.vercel.app/payment-success",
 
         metadata: {
         userId,
